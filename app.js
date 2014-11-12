@@ -7,4 +7,8 @@ app.get("/", function (req, res) {
   res.render("index.jade");
 });
 
+app.get("/search", function (req, res) {
+  res.render("search.jade", req.query);
+})
+
 app.listen(8080);
